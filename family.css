@@ -1,0 +1,295 @@
+/* General styling */
+
+/* General styling */
+body {
+    font-family: Georgia, serif;
+    background-color: #f5f1e9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Header styling */
+header {
+    background-color: #542747;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+h1 {
+    font-size: 38px;
+    margin: 0;
+}
+
+/* Content styling */
+.content {
+    padding: 25px;
+    max-width: 950px;
+    margin: auto;
+}
+
+/* Biography and achievements sections */
+.biography,
+.achievements,
+.timeline {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+/* Section headings */
+h2 {
+    color: ##542747;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Achievements list */
+.achievements ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.achievements li {
+    margin-bottom: 10px;
+}
+
+/* Portrait styling */
+.portrait {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.portrait img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.portrait figcaption {
+    margin-top: 12px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #542747;
+    color: white;
+}
+
+/* Photo gallery styling */
+.gallery {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.gallery-intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    margin: 0;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.03);
+}
+
+.gallery-item figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Responsive layout for phones */
+@media (max-width: 700px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Photos inside the three sections */
+.section-photo {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Faith and spiritual legacy */
+.faith {
+    background-color: #fdfbf5;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid #d8c9a3;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.faith h2 {
+    color: #542747;
+    font-size: 28px;
+}
+
+.faith h3 {
+    color: #8b7355;
+    margin-top: 25px;
+}
+
+.faith-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.faith-intro {
+    font-style: italic;
+    color: #666;
+}
+
+.faith blockquote {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #542747;
+    border-top: 2px solid #c5a45d;
+    border-bottom: 2px solid #c5a45d;
+    padding: 25px;
+    margin: 30px 0;
+}
+
+.faith cite {
+    display: block;
+    font-size: 15px;
+    margin-top: 15px;
+    font-style: normal;
+    color: #8b7355;
+}
+
+.faith-closing {
+    font-weight: bold;
+    color: #542747;
+}
+
+/* Ethiopian Orthodox cross */
+.faith-cross {
+    display: block;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin: 0 auto 20px;
+}
+
+/* Religious artwork */
+.religious-artwork {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.religious-artwork img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #c5a45d;
+}
+
+.religious-artwork p {
+    font-style: italic;
+    color: #666;
+    margin-top: 12px;
+}
+
+/* Photos inside the Life Journey timeline */
+.timeline-photos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px auto;
+}
+
+.timeline-photos img {
+    width: 45%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.timeline-photos img:hover {
+    transform: scale(1.03);
+}
+
+/* Responsive timeline photos */
+@media (max-width: 600px) {
+    .timeline-photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-photos img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+}
+.language-switch {
+    text-align: right;
+    padding: 12px 25px;
+    background-color: ##542747;
+    color: white;
+}
+
+.language-switch a {
+    color: #D4B779;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+.language-switch a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.language-switch a:hover {
+    text-decoration: underline;
+}
